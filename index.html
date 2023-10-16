@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Exemplo</title>
+    <link rel="shortcut icon" href="img/exemplo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/exemplo.png" alt="logo empresa exemplo">
+            <h1>Empresa <b>Exemplo</b></h1>
+        </a>
+        <ul>
+            <li><a class="anchor" href="#sobre">Sobre</a></li>
+            <li><a class="anchor" href="#servicos">Serviços</a></li>
+            <li><a class="anchor" href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="sobre">
+            <article class="artigo01">
+                <div class="container-texto">
+                    <h2>Missão da Empresa Exemplo</h2>
+                    <p>Na Empresa Exemplo, nossa missão é ser a principal fonte de soluções inovadoras e confiáveis para atender às necessidades dos nossos clientes.<br>Estamos comprometidos em oferecer produtos e serviços de alta qualidade que superem as expectativas, promovendo ao mesmo tempo um ambiente de trabalho colaborativo e sustentável para nossa equipe.</p>
+                </div>
+                <div class="imagem-sombra">
+                    <div class="container-img">
+                        <img src="img/nos.jpg" alt="imagem missão" class="img-nos">
+                    </div>
+                    <div class="sombra"></div>
+                </div>
+            </article>
+            <article class="artigo02">
+                <h2>Nossa Visão é</h2>
+                <ul class="ul">
+                    <div class="container-lista" data-index="0" data-status="active">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/excelencia.jpg" alt="imagem excelencia cliente"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Excelência do Cliente</strong></p>Estabelecer relacionamentos de longo prazo com nossos clientes, compreendendo suas necessidades e fornecendo soluções personalizadas que agreguem valor aos seus negócios.</li>
+                    </div>
+                    <div class="container-lista" data-index="1" data-status="unknown">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/inovação.png" alt="imagem inovação"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Inovação Constante</strong></p> Continuar a evoluir e inovar em todos os aspectos do nosso negócio, desde produtos até processos, para permanecer na vanguarda da indústria.</li>
+                    </div>
+                    <div class="container-lista" data-index="2" data-status="unknown">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/sustentabilidade.jpg" alt="imagem sustentabilidade"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Sustentabilidade Ambiental</strong></p> Integrar práticas sustentáveis em todas as nossas operações, minimizando nosso impacto ambiental e contribuindo para um futuro mais verde.</li>
+                    </div>
+                    <div class="container-lista" data-index="3" data-status="unknown">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/cultura.jpg" alt="imagem cultura"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Cultura de Equipe</strong></p> Nutrir um ambiente de trabalho inclusivo, diversificado e colaborativo, onde cada membro da equipe possa crescer, prosperar e contribuir para o sucesso da Empresa Exemplo.</li>
+                    </div>
+                    <div class="container-lista" data-index="4" data-status="unknown">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/etica.jpg" alt="imagem etica e integridade"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Ética e Integridade</strong></p> Manter os mais altos padrões éticos em tudo o que fazemos, garantindo a transparência, a honestidade e a responsabilidade em nossas ações.</li>
+                    </div>
+                    <div class="container-lista" data-index="5" data-status="unknown">
+                        <div class="imagem-sombra">
+                            <div class="container-img"><img src="img/crecimento-sustentavel.jpg" alt="imagem crescimento sustentável"></div>
+                            <div class="sombra"></div>
+                        </div>
+                        <li><p><strong>Crescimento Sustentável</strong></p> Buscar o crescimento financeiro responsável e sustentável, garantindo a estabilidade a longo prazo da nossa empresa e a segurança dos nossos colaboradores.</li>
+                    </div>
+                </ul>
+                <div class="container-botoes">
+                    <button onclick="esquerda()">&lt;</button>
+                    <button onclick="direita()">&gt;</button>
+                </div>
+            </article>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <article class="artigoServicos" data-index="0" data-status="active">        
+                <figure>
+                    <div class="container-texto">
+                        <h3>Consultoria Personalizada de Sucesso Empresarial</h3>
+                        <figcaption>Consultoria Personalizada de Sucesso Empresarial: Nossa consultoria personalizada é projetada para impulsionar o sucesso do seu negócio. Conte conosco para identificar soluções sob medida que o levarão ao próximo nível.</figcaption>
+                    </div>
+                    <div class="imagem-sombra">
+                        <div class="container-img"><img src="img/consultoria-empresarial.jpg" alt="imagem consultoria empresarial"></div>
+                        <div class="sombra"></div>
+                    </div>
+                </figure>
+            </article>
+            <article class="artigoServicos" data-index="1" data-status="unknown">
+                <figure>
+                    <div class="container-texto">
+                        <h3>Desenvolvimento de Software de Alto Desempenho</h3>
+                        <figcaption>Criamos aplicativos e sites de classe mundial que irão encantar seus clientes e otimizar suas operações. Transforme sua visão em realidade com a nossa experiência em desenvolvimento de software.</figcaption>
+                    </div>
+                    <div class="imagem-sombra">
+                        <div class="container-img"><img src="img/desenvolvimento-software.jpeg" alt="imagem desenvolvimento de software"></div>
+                        <div class="sombra"></div>
+                    </div>
+                </figure>
+            </article>
+            <article class="artigoServicos" data-index="2" data-status="unknown">
+                <figure>
+                    <div class="container-texto">
+                        <h3>Gerenciamento de Projetos Eficiente</h3>
+                        <figcaption>Deixe-nos cuidar da gestão de projetos para que você possa focar no que faz de melhor. Cumprimos prazos e orçamentos, garantindo o sucesso dos seus projetos.</figcaption>
+                    </div>
+                    <div class="imagem-sombra">
+                        <div class="container-img"><img src="img/projetos-gestao.jpg" alt="imagem gestao de projetos"></div>
+                        <div class="sombra"></div>
+                    </div>
+                </figure>
+            </article>
+            <div class="container-botoes">
+                <button onclick="esquerda02()">&lt;</button>
+                <button onclick="direita02()">&gt;</button>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p><strong>Está pronto para transformar suas necessidades em realidade?</strong> Entre em contato conosco hoje mesmo e descubra como podemos ajudá-lo a alcançar seus objetivos. Nossa equipe está pronta para atendê-lo e fornecer soluções sob medida.</p>
+            <form action="">
+                <div class="container-textArea">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <div class="informacoes-basicas">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2023 - Empresa Exemplo <sup>&trade;</sup> Todos direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --cor-fonte: #333;
+    --cor-primaria: blue;
+    --cor-secundaria: orange;
+    --cor-background: rgb(255, 249, 234);
+}
+
+html{
+    scroll-behavior: smooth !important; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    appearance: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 1920px;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: 8vh;
+    margin-bottom: 2rem;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 20%;
+    color: var(--cor-secundaria);
+    user-select: none;
+}
+
+header .logo b{
+    color: var(--cor-primaria)
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    font-size: 18px;
+    padding-right: 1rem;
+    user-select: none;
+}
+
+header ul li a{
+    color: var(--cor-fonte);
+}
+
+header ul li a:hover{
+    color: var(--cor-primaria);
+}
+
+main{
+    flex-grow: 1;
+}
+
+main #sobre .artigo01{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+main #sobre .artigo01 .container-texto{
+    width: 45%;
+}
+
+main #sobre .artigo01 .container-texto h2{
+    margin-bottom: 1rem;
+    font-size: 36px;
+    color: var(--cor-secundaria);
+}
+
+main #sobre .artigo01 .container-texto p{
+    font-size: 24px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+main #sobre .artigo01 .imagem-sombra{
+    position: relative;
+    right: 10%;
+}
+
+main #sobre .artigo01 .imagem-sombra .container-img{
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo01 .imagem-sombra .container-img img{
+    position: relative;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo01 .imagem-sombra .sombra{
+    width: 350px;
+    height: 350px;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    border-radius: 50%;
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo01 .imagem-sombra:hover .container-img{
+    max-width: 399px;
+    max-height: 399px;
+}
+
+main #sobre .artigo01 .imagem-sombra:hover .sombra{
+    width: 399px;
+    height: 399px;
+}
+
+main #sobre .artigo01 .imagem-sombra:hover .container-img img{
+    scale: 1.1;
+    right: 5%;
+}
+
+main #sobre .artigo02{
+    position: relative;
+    background-color: var(--cor-background);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #sobre .artigo02 h2{
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+}
+
+main #sobre .artigo02 ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+
+main #sobre .artigo02 ul .container-lista{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo02 ul .container-lista p{
+    font-size: 36px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+main #sobre .artigo02 ul .container-lista li{
+    max-width: 40%;
+    font-size: 24px;
+    margin-right: 10rem;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-left: 10rem;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra .container-img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra .container-img img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra .sombra{
+    width: 350px;
+    height: 350px;
+    background-color: var(--cor-primaria);
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    border-radius: 50%;
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra:hover .container-img{
+    width: 399px;
+    height: 399px;
+    transform: translate(-10%);
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra:hover .sombra{
+    width: 399px;
+    height: 399px;
+}
+
+main #sobre .artigo02 ul .container-lista .imagem-sombra:hover .container-img img{
+    scale: 1.2;
+    width: 399px;
+    height: 399px;
+}
+
+main #sobre .artigo02 ul .container-lista[data-status="unknown"]{
+    transform: translate(-100%);
+    transition: none;
+}
+
+
+main #sobre .artigo02 ul .container-lista[data-status="becoming-active-from-before"]{
+    transform: translate(-100%);
+    transition: none;
+}
+
+main #sobre .artigo02 ul .container-lista[data-status="becoming-active-from-after"]{
+    transform: translate(100%);
+    transition: none;
+}
+
+main #sobre .artigo02 ul .container-lista[data-status="after"]{
+    transform: translate(100%);
+}
+
+main #sobre .artigo02 ul .container-lista[data-status="before"]{
+    transform: translate(-100%);
+}
+
+main #sobre .artigo02 .container-botoes{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main #sobre .artigo02 .container-botoes button{
+    font-size: 48px;
+    width: 50%;
+    background-color: var(--cor-background);
+    color: var(--cor-primaria);
+    user-select: none;
+    cursor: pointer;
+}
+
+main #sobre .artigo02 .container-botoes button:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+main #servicos{
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #servicos h2{
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+}
+
+main #servicos figure{
+    position: relative;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main #servicos article{
+    transition: all 0.3s ease;
+}
+
+main #servicos article figure .container-texto{
+    position: relative;
+    max-width: 40%;
+    font-size: 24px;
+    margin-left: 10rem;
+}
+
+main #servicos article figure .container-texto h3{
+    position: relative;
+    font-size: 36px;
+    color: var(--cor-secundaria);
+}
+
+main #servicos article{
+    position: absolute;
+}
+
+
+main #servicos article figure .imagem-sombra{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-right: 13rem;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+main #servicos article figure .imagem-sombra .container-img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+main #servicos article figure .imagem-sombra .container-img img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+main #servicos article figure .imagem-sombra .sombra{
+    width: 350px;
+    height: 350px;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    border-radius: 50%;
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+
+main #servicos article figure .imagem-sombra:hover .container-img{
+    width: 399px;
+    height: 399px;
+    transform: translate(-10%);
+}
+
+main #servicos article figure .imagem-sombra:hover .sombra{
+    width: 399px;
+    height: 399px;
+}
+
+main #servicos article figure .imagem-sombra:hover .container-img img{
+    scale: 1.2;
+    width: 399px;
+    height: 399px;
+}
+
+main #servicos .artigoServicos[data-status="unknown"]{
+    transform: translate(-100%);
+    transition: none;
+}
+
+
+main #servicos .artigoServicos[data-status="becoming-active-from-before"]{
+    transform: translate(-100%);
+    transition: none;
+}
+
+main #servicos .artigoServicos[data-status="becoming-active-from-after"]{
+    transform: translate(100%);
+    transition: none;
+}
+
+main #servicos .artigoServicos[data-status="after"]{
+    transform: translate(100%);
+}
+
+main #servicos .artigoServicos[data-status="before"]{
+    transform: translate(-100%);
+}
+
+main #servicos .container-botoes{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main #servicos .container-botoes button{
+    font-size: 48px;
+    width: 50%;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    user-select: none;
+    cursor: pointer;
+}
+
+main #servicos .container-botoes button:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+main #contato{
+    position: relative;
+    background-color: var(--cor-background);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contato h2{
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+}
+
+main #contato p{
+    max-width: 40%;
+    font-size: 24px;
+}
+
+main #contato p strong{
+    color: var(--cor-primaria);
+}
+
+main #contato form{
+    display: flex;
+    gap: 2rem;
+}
+
+main #contato form .informacoes-basicas{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+main #contato form .informacoes-basicas input{
+    font-size: 24px;
+    border-radius: 10px;
+    width: 350px;
+    padding: 3px;
+}
+
+main #contato form .informacoes-basicas button{
+    margin-top: 5rem;
+    font-size: 24px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+main #contato form .informacoes-basicas button:hover{
+    background-color: var(--cor-secundaria);
+}
+
+main #contato form .container-textArea{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+main #contato form .container-textArea textarea{
+    font-size: 24px;
+    width: 350px;
+    resize: none;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
